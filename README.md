@@ -24,6 +24,15 @@ Extension of Work done for Videos
 * [Bag of Tricks and A Strong ReID Baseline](https://github.com/michuanhaohao/reid-strong-baseline) || [paper](http://openaccess.thecvf.com/content_CVPRW_2019/papers/TRMTMCT/Luo_Bag_of_Tricks_and_a_Strong_Baseline_for_Deep_Person_CVPRW_2019_paper.pdf) 
 * [Online-Soft-Mining-and-Class-Aware-Attention](https://github.com/ppriyank/-Online-Soft-Mining-and-Class-Aware-Attention-Pytorch) || [paper](https://arxiv.org/pdf/1811.01459v2.pdf)
 
+## CORRECTION 
+PRID results have been reported for split 0. 
+Please consider the current SOTA as R-1 : 95.5 R-5: 100 R10: 100
+for **Global-local temporal representations for video person re-identification. In ICCV, 2019**
+
+## Specifications  
+Pytorch == 1.3.0  
+Python3   
+
 ## MODEL
 
 <img src="https://github.com/ppriyank/Video-Person-Re-ID-Fantastic-Techniques-and-Where-to-Find-Them/blob/master/images/diag.png" width="900">
@@ -95,6 +104,9 @@ MARS dataset:
 * weight_decay = 0.0005
 
 
+## NOTE 
+Change the dataset path in `tools/data_manager.py` line 21 : `storage_dir = "/beegfs/pp1953/"`    
+(apologies for the inconvenience)
 
 ## bag of tricks   
 normal architecrture : `args.arch = "ResNet50ta_bt"`    
